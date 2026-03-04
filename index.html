@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inyección - OBD II</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inteligent Fuel Injection Trainer</h1>
+
+    <div id="start-screen">
+        <img id="start-image" src="https://www.dropbox.com/scl/fi/ovadr6n13c6dy1549fk7z/Doc2_page-0001.jpg?rlkey=ktfg1pz345dtdd2jgjkny8r6y&st=ydfxdzau&dl=1" alt="Inicio">
+        <button id="connect-bluetooth-btn">Conectar ESP32</button>
+        <div id="bluetooth-status" class="bluetooth-status disconnected">Desconectado</div>
+        <button id="start-btn">Comenzar Cuestionarios</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <h2 id="question-title"></h2>
+        <img id="question-image" src="" alt="Imagen de la pregunta">
+        <h3 id="question-text"></h3>
+        <div id="options-container" class="options"></div>
+        <button id="evaluar-btn">Evaluar</button>
+        <div id="feedback" class="hidden"></div>
+        <button id="reintentar-btn" class="hidden">Reintentar</button>
+    </div>
+
+    <div id="final-screen" class="hidden">
+        <p>Filtro de seguridad realizado con exito. </p>
+        <button id="encender-prototipo-btn">Encender prototipo</button>
+        <div id="encender-status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
